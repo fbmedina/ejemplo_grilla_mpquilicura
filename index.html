@@ -1,0 +1,49 @@
+<!-- Importante recordar que las pantallas van desde la más chica a la más grande. Las pantallas más grandes heredan las propiedades de las más chicas. Por lo tanto definiremos un número de columnas desde más pequeño a más grande sin necesidad de repetir. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>El título de mi sitio</title>
+	<link rel="stylesheet" href="ejemplo_grilla.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- El titulo contenido en un div que ocupa el ancho total de la pantalla (12 columnas) -->
+	<div class="col-xs-12">
+		<h1>El título de mi sitio</h1>
+	</div>
+
+	<!-- Un div que desde pantalla md ocupa la mitad de la pantalla (6 columnas) y en la pantalla xs y sm ocupa el ancho total de la pantalla (12 columnas) -->
+	<div class="col-xs-12 col-md-6">
+		<h2>¿Qué hacemos?</h2>
+		
+		<!-- 3 divs que desde pantalla md ocupan 1/3 de su contenedor (4 columnas cada uno) y en la pantalla xs y sm ocupan el ancho total de la pantalla (12 columnas) -->
+		<div class="col-xs-12 col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quasi corporis illo optio quia, magnam eius, ratione assumenda. Voluptatem.</p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, assumenda, ipsam. Ea ullam dolores in perferendis.</p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet necessitatibus culpa et deserunt eligendi repellat error explicabo minima.</p>
+		</div>
+	</div>
+
+	<!-- Un div que desde pantalla md ocupa la mitad de la pantalla (6 columnas) y en la pantalla xs y sm ocupa el ancho total de la pantalla (12 columnas). Contiene una imagen, ésta, gracias al estilo en style.css se adapta al 100% de su contenedor -->
+	<div class="col-xs-12 col-md-6">
+		<img src="perritos.jpg" alt="perritos">
+	</div>
+
+	<!-- Un div que desde pantalla md ocupa 1/3 de la pantalla (4 columnas) y en la pantalla xs y sm ocupa el ancho total de la pantalla (12 columnas). Contiene una imagen, ésta, gracias al estilo en style.css se adapta al 100% de su contenedor -->
+	<div class="col-xs-12 col-md-4">
+		<img src="premio.png" alt="premio1">
+	</div>
+
+	<!-- Un div que desde pantalla md ocupa 1/3 de la pantalla (4 columnas) y, además, tiene un margen izquierdo de 4 columnas. En la pantalla xs y sm ocupa el ancho total de la pantalla (12 columnas) y no tiene margen izquierdo. Contiene una imagen, ésta, gracias al estilo en style.css se adapta al 100% de su contenedor -->
+	<div class="col-xs-12 col-md-offset-4 col-md-4">
+		<img src="corazon.png" alt="mano corazón">
+	</div>
+</body>
+</html>

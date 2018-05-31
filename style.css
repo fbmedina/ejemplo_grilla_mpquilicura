@@ -1,0 +1,12 @@
+/* Aquí defino que tanto el h1 como el h2 estén alineados al centro. Recuerden que se le pueden asignar las mismas propiedades a más de un elemento separándolos por comas */
+
+h1, h2 {
+	text-align: center;
+}
+
+/* Aquí defino que todas las imágenes tengan un ancho del 100% respecto a su contenedor y que el alto sea proporcional a la imagen original (o sea que al achicarse o agrandarse no se estire ni alargue) */
+
+img {
+	width: 100%;
+	height: auto;
+}
